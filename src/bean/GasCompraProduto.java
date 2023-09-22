@@ -1,5 +1,9 @@
 package bean;
+<<<<<<< HEAD
 // Generated 15/09/2023 09:35:39 by Hibernate Tools 4.3.1
+=======
+// Generated 21/09/2023 15:45:34 by Hibernate Tools 4.3.1
+>>>>>>> 69a4caa (provinha enviada)
 
 
 import javax.persistence.Column;
@@ -20,15 +24,24 @@ import javax.persistence.Table;
 public class GasCompraProduto  implements java.io.Serializable {
 
 
+<<<<<<< HEAD
      private int idcompraProduto;
+=======
+     private int gasIdcompraProduto;
+>>>>>>> 69a4caa (provinha enviada)
      private GasCompra gasCompra;
      private GasProduto gasProduto;
 
     public GasCompraProduto() {
     }
 
+<<<<<<< HEAD
     public GasCompraProduto(int idcompraProduto, GasCompra gasCompra, GasProduto gasProduto) {
        this.idcompraProduto = idcompraProduto;
+=======
+    public GasCompraProduto(int gasIdcompraProduto, GasCompra gasCompra, GasProduto gasProduto) {
+       this.gasIdcompraProduto = gasIdcompraProduto;
+>>>>>>> 69a4caa (provinha enviada)
        this.gasCompra = gasCompra;
        this.gasProduto = gasProduto;
     }
@@ -36,6 +49,7 @@ public class GasCompraProduto  implements java.io.Serializable {
      @Id 
 
     
+<<<<<<< HEAD
     @Column(name="idcompra_produto", unique=true, nullable=false)
     public int getIdcompraProduto() {
         return this.idcompraProduto;
@@ -43,6 +57,15 @@ public class GasCompraProduto  implements java.io.Serializable {
     
     public void setIdcompraProduto(int idcompraProduto) {
         this.idcompraProduto = idcompraProduto;
+=======
+    @Column(name="gas_idcompra_produto", unique=true, nullable=false)
+    public int getGasIdcompraProduto() {
+        return this.gasIdcompraProduto;
+    }
+    
+    public void setGasIdcompraProduto(int gasIdcompraProduto) {
+        this.gasIdcompraProduto = gasIdcompraProduto;
+>>>>>>> 69a4caa (provinha enviada)
     }
 
 @ManyToOne(fetch=FetchType.LAZY)

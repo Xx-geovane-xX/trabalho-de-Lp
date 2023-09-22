@@ -1,4 +1,5 @@
 package bean;
+<<<<<<< HEAD
 // Generated 15/09/2023 09:35:39 by Hibernate Tools 4.3.1
 
 
@@ -6,6 +7,19 @@ import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+=======
+// Generated 21/09/2023 15:45:34 by Hibernate Tools 4.3.1
+
+
+import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+>>>>>>> 69a4caa (provinha enviada)
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -31,11 +45,19 @@ public class GasFornecedor  implements java.io.Serializable {
      private String gasEmail;
      private String gasEstado;
      private Date gasDataCadastro;
+<<<<<<< HEAD
      private Date gasDataUltimaCompra;
+=======
+     private String gasIdade;
+>>>>>>> 69a4caa (provinha enviada)
      private String gasCep;
      private String gasTelefone;
      private String gasCnpj;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 69a4caa (provinha enviada)
     public GasFornecedor() {
     }
 
@@ -43,7 +65,11 @@ public class GasFornecedor  implements java.io.Serializable {
     public GasFornecedor(int gasIdfornecedor) {
         this.gasIdfornecedor = gasIdfornecedor;
     }
+<<<<<<< HEAD
     public GasFornecedor(int gasIdfornecedor, String gasNome, String gasCidade, String gasCpf, String gasRg, String gasApelido, Date gasDataNascimento, String gasSexo, String gasEmail, String gasEstado, Date gasDataCadastro, Date gasDataUltimaCompra, String gasCep, String gasTelefone, String gasCnpj) {
+=======
+    public GasFornecedor(int gasIdfornecedor, String gasNome, String gasCidade, String gasCpf, String gasRg, String gasApelido, Date gasDataNascimento, String gasSexo, String gasEmail, String gasEstado, Date gasDataCadastro, String gasIdade, String gasCep, String gasTelefone, String gasCnpj) {
+>>>>>>> 69a4caa (provinha enviada)
        this.gasIdfornecedor = gasIdfornecedor;
        this.gasNome = gasNome;
        this.gasCidade = gasCidade;
@@ -55,10 +81,18 @@ public class GasFornecedor  implements java.io.Serializable {
        this.gasEmail = gasEmail;
        this.gasEstado = gasEstado;
        this.gasDataCadastro = gasDataCadastro;
+<<<<<<< HEAD
        this.gasDataUltimaCompra = gasDataUltimaCompra;
        this.gasCep = gasCep;
        this.gasTelefone = gasTelefone;
        this.gasCnpj = gasCnpj;
+=======
+       this.gasIdade = gasIdade;
+       this.gasCep = gasCep;
+       this.gasTelefone = gasTelefone;
+       this.gasCnpj = gasCnpj;
+      
+>>>>>>> 69a4caa (provinha enviada)
     }
    
      @Id 
@@ -173,6 +207,7 @@ public class GasFornecedor  implements java.io.Serializable {
         this.gasDataCadastro = gasDataCadastro;
     }
 
+<<<<<<< HEAD
     @Temporal(TemporalType.DATE)
     @Column(name="gas_data_ultima_compra", length=10)
     public Date getGasDataUltimaCompra() {
@@ -181,6 +216,16 @@ public class GasFornecedor  implements java.io.Serializable {
     
     public void setGasDataUltimaCompra(Date gasDataUltimaCompra) {
         this.gasDataUltimaCompra = gasDataUltimaCompra;
+=======
+    
+    @Column(name="gas_idade", length=45)
+    public String getGasIdade() {
+        return this.gasIdade;
+    }
+    
+    public void setGasIdade(String gasIdade) {
+        this.gasIdade = gasIdade;
+>>>>>>> 69a4caa (provinha enviada)
     }
 
     
@@ -215,6 +260,10 @@ public class GasFornecedor  implements java.io.Serializable {
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 69a4caa (provinha enviada)
 }
 
 

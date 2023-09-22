@@ -5,10 +5,13 @@
  */
 package view;
 
+<<<<<<< HEAD
 import view.JDlgUsuariosNovo;
 import view.JDlgFornecedorNovo;
 import view.JDlgProduto;
 import view.JDlgTipo;;
+=======
+>>>>>>> 69a4caa (provinha enviada)
 
 /**
  *
@@ -166,26 +169,46 @@ public class JFrmPrincipal extends javax.swing.JFrame {
 
     private void jMnuUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuUsuariosActionPerformed
         // TODO add your handling code here:
+<<<<<<< HEAD
         JDlgUsuariosNovo jDlgUsuariosNovo = new JDlgUsuariosNovo(this, true);
         jDlgUsuariosNovo.setVisible(true);
+=======
+        JDlgUsuario jDlgUsuario = new JDlgUsuario(this, true);
+        jDlgUsuario.setVisible(true);
+>>>>>>> 69a4caa (provinha enviada)
     }//GEN-LAST:event_jMnuUsuariosActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         // TODO add your handling code here:
+<<<<<<< HEAD
         JDlgProduto jDlgProduto = new JDlgProduto(this, true);
         jDlgProduto.setVisible(true);
+=======
+        JDlgProdutoNovo jDlgProdutoNovo = new JDlgProdutoNovo(this, true);
+        jDlgProdutoNovo.setVisible(true);
+>>>>>>> 69a4caa (provinha enviada)
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
         // TODO add your handling code here:
+<<<<<<< HEAD
         JDlgTipo jDlgTipo = new JDlgTipo(this, true);
         jDlgTipo.setVisible(true);
+=======
+        JDlgTipoNovo jlgTipoNovo = new JDlgTipoNovo(this, true);
+        jlgTipoNovo.setVisible(true);
+>>>>>>> 69a4caa (provinha enviada)
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
         // TODO add your handling code here:
+<<<<<<< HEAD
         JDlgFornecedorNovo jDlgFornecedorNovo = new JDlgFornecedorNovo(this, true);
         jDlgFornecedorNovo.setVisible(true);
+=======
+        JDlgFornecedor1 jDlgFornecedor1 = new JDlgFornecedor1(this, true);
+        jDlgFornecedor1.setVisible(true);
+>>>>>>> 69a4caa (provinha enviada)
          
                         
     }//GEN-LAST:event_jMenuItem5ActionPerformed

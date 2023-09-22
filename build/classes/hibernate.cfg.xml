@@ -47,10 +47,18 @@ Contributor(s):
     <property name="hibernate.connection.username">geovane_silva</property>
     <property name="hibernate.connection.password">geovane_silva</property>
     <mapping class="bean.GasCompraProduto"/>
+<<<<<<< HEAD
     <mapping class="bean.GasUsuarios"/>
     <mapping class="bean.GasTipo"/>
     <mapping class="bean.GasCompra"/>
     <mapping class="bean.GasProduto"/>
     <mapping class="bean.GasFornecedor"/>
+=======
+    <mapping class="bean.GasCompra"/>
+    <mapping class="bean.GasFornecedor"/>
+    <mapping class="bean.GasTipo"/>
+    <mapping class="bean.GasUsuarios"/>
+    <mapping class="bean.GasProduto"/>
+>>>>>>> 69a4caa (provinha enviada)
   </session-factory>
 </hibernate-configuration>

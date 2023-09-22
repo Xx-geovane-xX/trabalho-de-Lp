@@ -1,5 +1,9 @@
 package bean;
+<<<<<<< HEAD
 // Generated 15/09/2023 09:35:39 by Hibernate Tools 4.3.1
+=======
+// Generated 21/09/2023 15:45:34 by Hibernate Tools 4.3.1
+>>>>>>> 69a4caa (provinha enviada)
 
 
 import java.util.HashSet;
@@ -26,7 +30,10 @@ public class GasCompra  implements java.io.Serializable {
      private String gasValorTOtal;
      private String gasFormaDePagamento;
      private String gasNumeroDaFatura;
+<<<<<<< HEAD
      private Set gasCompraProdutos = new HashSet(0);
+=======
+>>>>>>> 69a4caa (provinha enviada)
 
     public GasCompra() {
     }
@@ -35,13 +42,20 @@ public class GasCompra  implements java.io.Serializable {
     public GasCompra(int gasIdcompra) {
         this.gasIdcompra = gasIdcompra;
     }
+<<<<<<< HEAD
     public GasCompra(int gasIdcompra, String gasDataCompra, String gasValorTOtal, String gasFormaDePagamento, String gasNumeroDaFatura, Set gasCompraProdutos) {
+=======
+    public GasCompra(int gasIdcompra, String gasDataCompra, String gasValorTOtal, String gasFormaDePagamento, String gasNumeroDaFatura) {
+>>>>>>> 69a4caa (provinha enviada)
        this.gasIdcompra = gasIdcompra;
        this.gasDataCompra = gasDataCompra;
        this.gasValorTOtal = gasValorTOtal;
        this.gasFormaDePagamento = gasFormaDePagamento;
        this.gasNumeroDaFatura = gasNumeroDaFatura;
+<<<<<<< HEAD
        this.gasCompraProdutos = gasCompraProdutos;
+=======
+>>>>>>> 69a4caa (provinha enviada)
     }
    
      @Id 
@@ -96,6 +110,7 @@ public class GasCompra  implements java.io.Serializable {
         this.gasNumeroDaFatura = gasNumeroDaFatura;
     }
 
+<<<<<<< HEAD
 @OneToMany(fetch=FetchType.LAZY, mappedBy="gasCompra")
     public Set getGasCompraProdutos() {
         return this.gasCompraProdutos;
@@ -104,6 +119,9 @@ public class GasCompra  implements java.io.Serializable {
     public void setGasCompraProdutos(Set gasCompraProdutos) {
         this.gasCompraProdutos = gasCompraProdutos;
     }
+=======
+
+>>>>>>> 69a4caa (provinha enviada)
 
 
 

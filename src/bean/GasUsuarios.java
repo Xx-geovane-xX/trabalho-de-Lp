@@ -1,5 +1,9 @@
 package bean;
+<<<<<<< HEAD
 // Generated 15/09/2023 09:35:39 by Hibernate Tools 4.3.1
+=======
+// Generated 21/09/2023 15:45:34 by Hibernate Tools 4.3.1
+>>>>>>> 69a4caa (provinha enviada)
 
 
 import java.util.Date;
@@ -25,7 +29,13 @@ public class GasUsuarios  implements java.io.Serializable {
      private String gasApelido;
      private String gasNome;
      private Date gasDataNasc;
+<<<<<<< HEAD
      private String gasTelefone;
+=======
+     private String gasSenha;
+     private int gasNivel;
+     private String gasAtivo;
+>>>>>>> 69a4caa (provinha enviada)
 
     public GasUsuarios() {
     }
@@ -34,13 +44,23 @@ public class GasUsuarios  implements java.io.Serializable {
     public GasUsuarios(int gasIdusuarios) {
         this.gasIdusuarios = gasIdusuarios;
     }
+<<<<<<< HEAD
     public GasUsuarios(int gasIdusuarios, String gasCpf, String gasApelido, String gasNome, Date gasDataNasc, String gasTelefone) {
+=======
+    public GasUsuarios(int gasIdusuarios, String gasCpf, String gasApelido, String gasNome, Date gasDataNasc, String gasSenha, int gasNivel, String gasAtivo) {
+>>>>>>> 69a4caa (provinha enviada)
        this.gasIdusuarios = gasIdusuarios;
        this.gasCpf = gasCpf;
        this.gasApelido = gasApelido;
        this.gasNome = gasNome;
        this.gasDataNasc = gasDataNasc;
+<<<<<<< HEAD
        this.gasTelefone = gasTelefone;
+=======
+       this.gasSenha = gasSenha;
+       this.gasNivel = gasNivel;
+       this.gasAtivo = gasAtivo;
+>>>>>>> 69a4caa (provinha enviada)
     }
    
      @Id 
@@ -96,6 +116,7 @@ public class GasUsuarios  implements java.io.Serializable {
     }
 
     
+<<<<<<< HEAD
     @Column(name="gas_telefone", length=11)
     public String getGasTelefone() {
         return this.gasTelefone;
@@ -103,6 +124,35 @@ public class GasUsuarios  implements java.io.Serializable {
     
     public void setGasTelefone(String gasTelefone) {
         this.gasTelefone = gasTelefone;
+=======
+    @Column(name="gas_senha", length=45)
+    public String getGasSenha() {
+        return this.gasSenha;
+    }
+    
+    public void setGasSenha(String gasSenha) {
+        this.gasSenha = gasSenha;
+    }
+
+    
+    @Column(name="gas_nivel")
+    public int getGasNivel() {
+        return this.gasNivel;
+    }
+    
+    public void setGasNivel(int gasNivel) {
+        this.gasNivel = gasNivel;
+    }
+
+    
+    @Column(name="gas_ativo", length=45)
+    public String getGasAtivo() {
+        return this.gasAtivo;
+    }
+    
+    public void setGasAtivo(String gasAtivo) {
+        this.gasAtivo = gasAtivo;
+>>>>>>> 69a4caa (provinha enviada)
     }
 
 

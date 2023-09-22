@@ -1,13 +1,25 @@
 package bean;
+<<<<<<< HEAD
 // Generated 15/09/2023 09:35:39 by Hibernate Tools 4.3.1
 
 
+=======
+// Generated 21/09/2023 15:45:34 by Hibernate Tools 4.3.1
+
+
+import java.util.HashSet;
+import java.util.Set;
+>>>>>>> 69a4caa (provinha enviada)
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+<<<<<<< HEAD
+=======
+import javax.persistence.OneToMany;
+>>>>>>> 69a4caa (provinha enviada)
 import javax.persistence.Table;
 
 /**
@@ -21,21 +33,37 @@ public class GasProduto  implements java.io.Serializable {
 
 
      private int gasIdproduto;
+<<<<<<< HEAD
      private int gasFornecedor;
      private int gasTipo;
      private String gasValor;
      private String gasNome;
 
+=======
+     private GasFornecedor gasFornecedor;
+     private GasTipo gasTipo;
+     private String gasValor;
+     private String gasNome;
+    
+>>>>>>> 69a4caa (provinha enviada)
     public GasProduto() {
     }
 
 	
+<<<<<<< HEAD
     public GasProduto(int gasIdproduto, int gasFornecedor, int gasTipo) {
+=======
+    public GasProduto(int gasIdproduto, GasFornecedor gasFornecedor, GasTipo gasTipo) {
+>>>>>>> 69a4caa (provinha enviada)
         this.gasIdproduto = gasIdproduto;
         this.gasFornecedor = gasFornecedor;
         this.gasTipo = gasTipo;
     }
+<<<<<<< HEAD
     public GasProduto(int gasIdproduto, int gasFornecedor, int gasTipo, String gasValor, String gasNome) {
+=======
+    public GasProduto(int gasIdproduto, GasFornecedor gasFornecedor, GasTipo gasTipo, String gasValor, String gasNome) {
+>>>>>>> 69a4caa (provinha enviada)
        this.gasIdproduto = gasIdproduto;
        this.gasFornecedor = gasFornecedor;
        this.gasTipo = gasTipo;
@@ -57,21 +85,37 @@ public class GasProduto  implements java.io.Serializable {
 
 @ManyToOne(fetch=FetchType.LAZY)
     @JoinColumn(name="gas_fk_fornecedor", nullable=false)
+<<<<<<< HEAD
     public int getGasFornecedor() {
         return this.gasFornecedor;
     }
     
     public void setGasFornecedor(int gasFornecedor) {
+=======
+    public GasFornecedor getGasFornecedor() {
+        return this.gasFornecedor;
+    }
+    
+    public void setGasFornecedor(GasFornecedor gasFornecedor) {
+>>>>>>> 69a4caa (provinha enviada)
         this.gasFornecedor = gasFornecedor;
     }
 
 @ManyToOne(fetch=FetchType.LAZY)
     @JoinColumn(name="gas_fk_tipoo", nullable=false)
+<<<<<<< HEAD
     public int getGasTipo() {
         return this.gasTipo;
     }
     
     public void setGasTipo(int gasTipo) {
+=======
+    public GasTipo getGasTipo() {
+        return this.gasTipo;
+    }
+    
+    public void setGasTipo(GasTipo gasTipo) {
+>>>>>>> 69a4caa (provinha enviada)
         this.gasTipo = gasTipo;
     }
 
@@ -96,6 +140,11 @@ public class GasProduto  implements java.io.Serializable {
     }
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 69a4caa (provinha enviada)
 }
 
 

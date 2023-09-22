@@ -5,17 +5,44 @@
  */
 package view;
 
+<<<<<<< HEAD
 import javax.swing.table.AbstractTableModel;
 
+=======
+import bean.GasUsuarios;
+import java.util.List;
+import javax.swing.table.AbstractTableModel;
+
+
+>>>>>>> 69a4caa (provinha enviada)
 /**
  *
  * @author u05682855140
  */
+<<<<<<< HEAD
 public class UsuariosControle extends AbstractTableModel{
 
     @Override
     public int getRowCount() {
         return 1;
+=======
+public class UsuariosControle extends AbstractTableModel {
+    private List lista;
+    
+    public void setList(List lista){
+        this.lista = lista;
+    }
+
+    public GasUsuarios getbean(int linha){
+    return (GasUsuarios) lista.get(linha);
+        
+    }
+    
+    
+    @Override
+    public int getRowCount() {
+       return lista.size();
+>>>>>>> 69a4caa (provinha enviada)
     }
 
     @Override
@@ -25,6 +52,7 @@ public class UsuariosControle extends AbstractTableModel{
 
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
+<<<<<<< HEAD
         return "";
     }
     
@@ -43,5 +71,40 @@ public class UsuariosControle extends AbstractTableModel{
          return "Telefone";
     }
      return null;
+=======
+        GasUsuarios gasUsuarios = (GasUsuarios) lista.get(rowIndex);
+         if(columnIndex == 0){
+           return gasUsuarios.getGasIdusuarios();
+       } 
+         if(columnIndex == 1){
+           return gasUsuarios.getGasNome();
+       } 
+         if(columnIndex == 2){
+           return gasUsuarios.getGasApelido();
+       } 
+         if(columnIndex == 3){
+           return gasUsuarios.getGasCpf();
+       } 
+         
+           return "";
+    }
+    
+    
+    @Override
+    public String getColumnName(int columnIndex){
+       if(columnIndex == 0){
+           return "ID";
+       } 
+       if(columnIndex == 1){
+           return "Nome";
+       } 
+       if(columnIndex == 2){
+           return "Apelido";
+       } 
+       if(columnIndex == 3){
+           return "Cpf";
+       } 
+       return "";
+>>>>>>> 69a4caa (provinha enviada)
     }
 }

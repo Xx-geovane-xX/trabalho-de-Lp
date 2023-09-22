@@ -1,5 +1,9 @@
 package bean;
+<<<<<<< HEAD
 // Generated 15/09/2023 09:35:39 by Hibernate Tools 4.3.1
+=======
+// Generated 21/09/2023 15:45:34 by Hibernate Tools 4.3.1
+>>>>>>> 69a4caa (provinha enviada)
 
 
 import java.util.HashSet;
@@ -42,6 +46,10 @@ public class GasTipo  implements java.io.Serializable {
        this.gasPrecoMedio = gasPrecoMedio;
        this.gasUnidadeDeMedida = gasUnidadeDeMedida;
        this.gasPeso = gasPeso;
+<<<<<<< HEAD
+=======
+       
+>>>>>>> 69a4caa (provinha enviada)
     }
    
      @Id 
@@ -105,7 +113,13 @@ public class GasTipo  implements java.io.Serializable {
     public void setGasPeso(String gasPeso) {
         this.gasPeso = gasPeso;
     }
+<<<<<<< HEAD
  
+=======
+
+
+
+>>>>>>> 69a4caa (provinha enviada)
 
 
 }
